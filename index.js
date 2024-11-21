@@ -121,7 +121,7 @@ sayilar.forEach((num) => {
     ucetambolunenler.push(num);
   }
 } );
-console.log("üçe bölünenler: " + ucetambolunenler);
+console.log(ucetambolunenler);
 
 // 3c çözümü:
 ucebolunenlerintoplami = ucetambolunenler.reduce((toplam,sayi) => toplam = toplam + sayi,0);
@@ -149,9 +149,6 @@ for( let key in tekrarSayilari){
   
 }
 console.log(tekraredensayilar);
-
-
-
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
