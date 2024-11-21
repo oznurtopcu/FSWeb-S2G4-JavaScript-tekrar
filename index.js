@@ -55,7 +55,6 @@ function CemberinCevresi(yaricap) {
   console.log(cevre);
   return cevre;
 }
-
 CemberinCevresi(5);
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
@@ -74,8 +73,8 @@ function CemberinAlani(yaricap,pi) {
   return alan;
   /* kodlar buraya */
 }
-
 CemberinAlani(15,pi);
+
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
 /* 	GÖREV 3:
@@ -106,7 +105,6 @@ let ucetambolunenler = [],
   tekraredensayilar = [];
 
 // 3a çözümü
-
 for( let i = 0; i<sayilar.length; i++){
   if(sayilar[i] > enbuyuk){
     enbuyuk = sayilar[i];
@@ -118,7 +116,6 @@ for( let i = 0; i<sayilar.length; i++){
 console.log(enbuyuk , enkucuk);
 
 // 3b çözümü:
-
 sayilar.forEach((num) => {
   if(num % 3 === 0){
     ucetambolunenler.push(num);
@@ -127,29 +124,24 @@ sayilar.forEach((num) => {
 console.log("üçe bölünenler: " + ucetambolunenler);
 
 // 3c çözümü:
-
 ucebolunenlerintoplami = ucetambolunenler.reduce((toplam,sayi) => toplam = toplam + sayi,0);
 console.log(ucebolunenlerintoplami);
 
 // 3d çözümü
-
 besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
 console.log(besyuzdenkucuksayilar);
 
 // 3e çözümü
-
 siralisayilar = besyuzdenkucuksayilar.sort((a,b) => a-b);
 console.log(siralisayilar);
 
 // 3f çözümü
-
 let tekrarSayilari = {};
 
 for( let i = 0; i < sayilar.length; i++){
   let sayi = sayilar[i];
   (tekrarSayilari[sayi]) ? tekrarSayilari[sayi]++ : tekrarSayilari[sayi] = 1;
 }
-
 for( let key in tekrarSayilari){
   if(tekrarSayilari[key] > 1){
     tekraredensayilar.push(`${key} sayısı ${tekrarSayilari[key]} kere tekrar edilmiştir`);
@@ -157,6 +149,9 @@ for( let key in tekrarSayilari){
   
 }
 console.log(tekraredensayilar);
+
+
+
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
